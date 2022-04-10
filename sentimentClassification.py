@@ -16,7 +16,7 @@ def trainLinearRegression(weights):
     with open('trainingData.csv', 'r') as f:
         reader = csv.reader(f)
         trainingVectors = np.array(list(reader)) #we convert the list of lists we read into a numpy array
-        # print(trainingVectors)
+        # print(trainingVectors) 
     
     # we iterate a sufficient amount of times till the values in our weight table converge
     for i in tqdm(range(0, 20000)):
